@@ -3,14 +3,18 @@
 // Add event listeners to each button
 document.getElementById("btn1").addEventListener("click", function() {
     playMusic();
+    window.location.href = ""; // Navigate to Party page
+
 });
 
 document.getElementById("btn2").addEventListener("click", function() {
     playMusic();
+    window.location.href = "party.html"; // Navigate to Party page
 });
 
 document.getElementById("btn3").addEventListener("click", function() {
     playMusic();
+    window.location.href = "donkey.html"; // Navigate to Party page
 });
 
 // Function to play the music
@@ -24,3 +28,4 @@ function playMusic() {
         audio.play();
     }
 }
+
