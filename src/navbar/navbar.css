@@ -5,7 +5,7 @@ body {
 }
 
 .navbar {
-    background-color: #333;
+    background-color: #793093;
     display: flex;
     justify-content: center;
     padding: 10px 0;
@@ -19,6 +19,7 @@ body {
     margin: 0 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    border-radius: 25%;
 }
 
 .nav-btn:hover {
