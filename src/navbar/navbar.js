@@ -1,31 +1,31 @@
-// JavaScript code goes here
-
-// Add event listeners to each button
-document.getElementById("btn1").addEventListener("click", function() {
+document.addEventListener("DOMContentLoaded", function () {
+  // Add event listeners to each button
+  document.getElementById("btn1").addEventListener("click", function () {
     playMusic();
-    window.location.href = ""; // Navigate to Party page
+  });
 
-});
-
-document.getElementById("btn2").addEventListener("click", function() {
+  document.getElementById("btn2").addEventListener("click", function () {
     playMusic();
-    window.location.href = "party.html"; // Navigate to Party page
-});
+  });
 
-document.getElementById("btn3").addEventListener("click", function() {
+  document.getElementById("btn3").addEventListener("click", function () {
     playMusic();
-    window.location.href = "donkey.html"; // Navigate to Party page
-});
+  });
 
-// Function to play the music
-function playMusic() {
+  // Function to play the music
+  function playMusic() {
     var audio = document.getElementById("audio");
     if (audio.paused) {
-        audio.play();
+      audio.play();
     } else {
-        audio.pause();
-        audio.currentTime = 0; // Reset the music to the beginning
-        audio.play();
+      audio.pause();
+      audio.currentTime = 0; // Reset the music to the beginning
+      audio.play();
     }
-}
+  }
 
+  // Function to redirect to another HTML file
+  function redirectTo(url) {
+    window.location.href = url;
+  }
+});
