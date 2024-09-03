@@ -1,0 +1,3 @@
+.env.DbConnect
+.env.servicesConnections
+node_modules
